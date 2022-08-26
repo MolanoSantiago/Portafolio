@@ -1,0 +1,127 @@
+:root {
+  --theme-color: white;
+  --primary-color: #06283d;
+  --secundary-color: #F7C331;
+  --text-color-inverse: white;
+  --text-color: black;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #06283d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.horizontal-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.vertical-padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 950px) {
+  .horizontal-padding {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .vertical-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.box__footer {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.box__footer .logo__footer img {
+  width: 180px;
+}
+
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.box__footer a {
+  text-decoration: none;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.box__footer #facebook:hover {
+  background-color: var(--secundary-color);
+  color: #000000;
+}
+
+.box__footer #twitter:hover {
+  background-color: var(--secundary-color);
+  color: black;
+}
+
+.box__footer #instagram:hover {
+    background-color: var(--secundary-color);
+    color: black;
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 12px;
+}
+
+.box__copyright p {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.box__copyright hr {
+  border: none;
+  height: 4px;
+  background-color: #a7d4dc;
+}

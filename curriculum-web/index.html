@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Molano</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/experiences.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="icon" href="assets/img/icon.png" />
+    <script defer src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="/" class="logo">
+          <img
+            height="50"
+            width="50"
+            src="assets/img/cuadrado.jpg"
+            alt="programador"
+          />
+          <div class="logotype">
+            Mxlano<br />
+            { dev }
+          </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="assets/img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="assets/img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#profile" class="selected">Perfil</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding" id="profile">
+      <section class="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy <br />Santiago Molano</h1>
+          <p class="profile-details">
+            Soy un apasionado por la automatización y el desarrollo de software,
+            con experiencia en varios lenguajes de programación y tecnologías.
+          </p>
+          <a href="./assets/data/SantiagoMolanoCV.pdf" download="SantiagoMolanoCV"><button class="profile-btn">Descargar cv</button></a>
+        </div>
+        <span class="profile-img-section">
+          <img class="profile-img" src="assets/img/fotoPerfl.jpg" alt="programador" />
+          <div class="profile-img-line"></div>
+        </span>
+      </section>
+    </div>
+
+    <section class="experiences" id="experience">
+      <img src="assets/img/wave.svg" alt="división" class="wave" />
+      <div class="experiences-body">
+        <h2 class="experiences-title">Experiencia</h2>
+        <div class="experiences-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">2022-2023</div>
+            <div class="experience-company">BTG Pactual Colombia</div>
+            <div class="experience-position">IT Fullstack Developer</div>
+            <div class="experience-description">
+              Desarrollo del front-end y el back-end para una automatización
+              usada por colaboradores enfocada en analizar procesos
+              almacenados de la base de datos. Haciendo uso de React.js, JavaScript,
+              Node.js, Serverless y la infraestructura de AWS (entre otras
+              tecnologías).
+            </div>
+          </div>
+          <div class="experience experience_left">
+            <div class="experience-date">2022-2023</div>
+            <div class="experience-company">BTG Pactual Colombia</div>
+            <div class="experience-position">IT Support Analyst</div>
+            <div class="experience-description">
+              Responsable en el área de tecnología de apoyar al equipo de soporte
+              de los diferentes sistemas de negocio que cubre la empresa con
+              documentación de incidencias en Confluence y gestión de estas en
+              Nuvu y Jira.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="assets/img/wave.svg" alt="división" class="wave wave_bottom" />
+    </section>
+
+    <div class="horizontal-padding vertical-padding" id="skills">
+      <section class="skills">
+        <h2 class="skills-title">Habilidades</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">CSS</li>
+          <li class="skills-skill">HTML</li>
+          <li class="skills-skill">Node.js</li>
+          <li class="skills-skill">React.js</li>
+          <li class="skills-skill">PHP</li>
+          <li class="skills-skill">JavaScript</li>
+          <li class="skills-skill">SQL Server</li>
+          <li class="skills-skill">GitHub</li>
+        </ul>
+      </section>
+    </div>
+                                                      
+    <section class="contact" id="contact">
+      <h2 class="contact-title">Contacto</h2>
+        <ul class="contact-list">
+          <li class="contact-item"><img src="assets/img/email.svg" alt="correo electrónico" width="25" height="25"/> s.molano0818@gmail.com</li>
+          <li class="contact-item"><img src="assets/img/phone.svg" alt="telefono" width="25" height="25"/> (+57) 3243638746</li>
+          <li class="contact-item enlace"><a href="https://github.com/MolanoSantiago" target="_blank"><img src="assets/img/github.svg" alt="GitHub" width="25" height="25"/> GitHub</li></a>
+          <li class="contact-item enlace"><a href="https://www.linkedin.com/in/santiago-molano-339575238/" target="_blank"><img src="assets/img/linkedin.svg" alt="LinkedIn" width="25" height="25"/> LinkedIn</li></a>
+        </ul>
+    </section>
+
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo__footer">
+            <img src="./assets/img/logoLetters.png" alt="Logo Portafolio" />
+          </div>
+        </div>
+        <div class="box__footer">
+          <h2>Redes sociales</h2>
+          <script></script>
+          <a
+            href="https://www.facebook.com/profile.php?id=100079089202277" target="_blank"
+            id="facebook"
+            ><img src="./assets/img/facebook-brands.svg" width="20" height="20" />
+            Facebook</a
+          >
+          <a href="https://www.instagram.com/mxlano.dev/" target="_blank" id="instagram"
+            ><img src="./assets/img/instagram-brands.svg" width="20" height="20" />
+            Instagram</a
+          >
+          <a href="https://twitter.com/DevMolano" target="_blank" id="twitter"
+            ><img src="./assets/img/twitter-brands.svg" width="20" height="20" />
+            Twitter</a
+          >
+        </div>
+      </div>
+      <div class="box__copyright">
+        <hr />
+        <p>
+          <b>© Molano-Santiago 2022</b>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
