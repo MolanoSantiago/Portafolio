@@ -1,7 +1,7 @@
 .contact {
   width: auto;
   margin: 0 auto;
-  padding: 30px;
+  padding: 1px;
   background-color: #a7d4dc;
   color: var(--text-color);
   height: 500px;
@@ -12,8 +12,9 @@
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: left;
   text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 7rem;
 }
 
 .contact-item {
@@ -22,7 +23,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   background-color: var(--theme-color);
   border-radius: 42px;
-  padding: 0.5em 0.7em;
+  padding: 0.5em 1em;
   margin: 10px;
 }
 
@@ -50,10 +51,10 @@
 @media(min-width: 950px) {
   .contact-title {
     font-size: 50px;
+    margin-bottom: 6rem;
   }
   
   .contact-item {
-    font-size: 30px;
-    margin: 20px;
+    font-size: 25px;
   }
 }
