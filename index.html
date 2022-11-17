@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/experiences.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/projects.css" />
     <link rel="icon" href="assets/img/icon.png" />
     <script defer src="js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
@@ -50,6 +51,7 @@
           <li><a href="#profile" class="selected">Perfil</a></li>
           <li><a href="#experience">Experiencia</a></li>
           <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
@@ -58,7 +60,7 @@
     <div class="horizontal-padding vertical-padding" id="profile">
       <section class="profile">
         <div class="profile-info">
-          <h1 class="profile-title">Hola, soy <br />Santiago Molano</h1>
+          <h1 class="profile-title">Hola, soy <br/>Santiago Molano</h1>
           <p class="profile-details">
             Soy un apasionado por la automatización y el desarrollo de software,
             con experiencia en varios lenguajes de programación y tecnologías.
@@ -122,14 +124,40 @@
         </ul>
       </section>
     </div>
+
+    <section class="experiences" id="projects">
+    <img src="assets/img/wave.svg" alt="división" class="wave" />
+    <div class="ProjectsContainer">
+      <h1 class="titleProjects">Algunos proyectos</h1>
+      <div class="ProjectsWrapper">
+        <div class="ProjectCard">
+          <div class="ProjectIcon">
+            <img src="/assets/img/chrono.png" alt="imgProject1" width="150px">
+          </div>
+          <h2 class="titleProject">Chrono</h2>
+          <p class="paragraphProject">Aplicativo web en PHP</p>
+          <a href="http://chrono.rf.gd/" target="_blank" class="projectLink">Ver</a>
+        </div>
+        <div class="ProjectCard">
+          <div class="ProjectIcon">
+            <img src="/assets/img/origen.png" alt="imgProject2" width="150px">
+          </div>
+          <h2 class="titleProject">Origen</h2>
+          <p class="paragraphProject">Landing Page en React</p>
+          <a href="https://molanosantiago.github.io/origen/" target="_blank" class="projectLink">Ver</a>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/wave.svg" alt="división" class="wave wave_bottom" />
+    </section>
                                                       
     <section class="contact" id="contact">
       <h2 class="contact-title">Contacto</h2>
         <ul class="contact-list">
-          <li class="contact-item"><img src="assets/img/email.svg" alt="correo electrónico" width="25" height="25"/> s.molano0818@gmail.com</li>
-          <li class="contact-item"><img src="assets/img/phone.svg" alt="telefono" width="25" height="25"/> (+57) 3243638746</li>
-          <li class="contact-item enlace"><a href="https://github.com/MolanoSantiago" target="_blank"><img src="assets/img/github.svg" alt="GitHub" width="25" height="25"/> GitHub</li></a>
           <li class="contact-item enlace"><a href="https://www.linkedin.com/in/santiago-molano-339575238/" target="_blank"><img src="assets/img/linkedin.svg" alt="LinkedIn" width="25" height="25"/> LinkedIn</li></a>
+          <li class="contact-item"><img src="assets/img/email.svg" alt="correo electrónico" width="25" height="25"/> s.molano0818@gmail.com</li>
+          <li class="contact-item enlace"><a href="https://github.com/MolanoSantiago" target="_blank"><img src="assets/img/github.svg" alt="GitHub" width="25" height="25"/> GitHub</li></a>
+          <li class="contact-item"><img src="assets/img/phone.svg" alt="telefono" width="25" height="25"/> (+57) 3243638746</li>
         </ul>
     </section>
 

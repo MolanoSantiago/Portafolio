@@ -5,6 +5,7 @@
   background-color: #a7d4dc;
   color: var(--text-color);
   height: 500px;
+  margin-top: -38px;
 }
 
 .contact-title {
@@ -12,13 +13,14 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
+  text-align: center;
 }
 
 .contact-item {
   font-size: 20px;
   font-weight: 500;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  background-color: var(--secundary-color);
+  background-color: var(--theme-color);
   border-radius: 42px;
   padding: 0.5em 0.7em;
   margin: 10px;
@@ -33,7 +35,7 @@
 .enlace a:hover {
   background-color: var(--primary-color);
   color: white;
-  transition: all 1.5s linear;
+  transition: all 1s linear;
 }
 
 .contact-list {
@@ -42,7 +44,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
 }
 
 @media(min-width: 950px) {

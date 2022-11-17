@@ -1,0 +1,103 @@
+.ProjectsContainer {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #045085;
+    color: var(--text-color-inverse);
+}
+
+.ProjectsWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 80px;
+    padding: 0 40px;
+}
+
+.ProjectCard {
+    color: black;
+    background: var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 340px;
+    padding: 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: all 0.2 ease-in-out;
+}
+
+.ProjectCard:hover {
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+}
+
+.ProjectIcon {
+    height: 150px;
+    width: 170px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.titleProjects {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.titleProject {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+
+.paragraphProject {
+    font-size: 1rem;
+}
+
+.projectLink {
+    background-color: var(--secundary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    padding: 0.5em 1.5em;
+    margin: 10px;
+    color: var(--text-color);
+}
+
+.projectLink:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: all 0.2s linear;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .ProjectsContainer {
+        height: 1200px;
+    }
+
+    .ProjectsWrapper {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .ProjectsContainer {
+        height: 1400px;
+    }
+
+    .titleProjects {
+        font-size: 3.5rem;
+    }
+}
