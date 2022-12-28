@@ -26,7 +26,7 @@
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-height: 400px;
     padding: 40px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2 ease-in-out;
@@ -38,8 +38,6 @@
 }
 
 .ProjectIcon {
-    height: 150px;
-    width: 170px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -67,7 +65,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
     padding: 0.5em 1.5em;
-    margin: 10px;
+    /* margin-bottom: 10px; */
     color: var(--text-color);
 }
 
@@ -96,7 +94,7 @@
 
 @media screen and (max-width: 480px) {
     .ProjectsContainer {
-        height: 1150px;
+        height: 1900px;
     }
 
     .titleProjects {
