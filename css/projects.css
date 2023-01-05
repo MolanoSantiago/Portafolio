@@ -1,5 +1,5 @@
 .ProjectsContainer {
-    height: 800px;
+    height: 1300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +12,10 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    grid-gap: 80px;
-    padding: 0 40px;
+    grid-gap: 50px;
+    padding: 0 25px;
 }
 
 .ProjectCard {
@@ -38,7 +38,6 @@
 }
 
 .ProjectIcon {
-    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -80,7 +79,7 @@
 
 @media screen and (max-width: 768px) {
     .ProjectsContainer {
-        height: 1700px;
+        height: 2300px;
     }
 
     .ProjectsWrapper {
@@ -94,11 +93,10 @@
 
 @media screen and (max-width: 480px) {
     .ProjectsContainer {
-        height: 1900px;
+        height: 2300px;
     }
 
     .titleProjects {
         font-size: 1.5rem;
-        margin-bottom: 3.5rem;
     }
 }

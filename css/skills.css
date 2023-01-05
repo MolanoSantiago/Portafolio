@@ -1,7 +1,15 @@
 .skills {
   max-width: 980px;
-  margin: 0 auto;
+  margin: 50px;
   height: 380px;
+  position: relative;
+}
+
+.skills-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .skills-title {
